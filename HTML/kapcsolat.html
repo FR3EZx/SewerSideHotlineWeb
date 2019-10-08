@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html lang="hu"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+  <title>Fehér Gábor weboldala</title> 
+  <link id="alap" rel="stylesheet" type="text/css" href="cheatcss.css" />  
+ 
+ 
+	<style type="text/css">
+.style1 {
+				border-width: 0px;
+}
+</style>
+ 
+ 
+</head>
+<body id="hatter">
+<div id="lap">
+<div id="tarolo"> <header id="fejlec"><img id="logo" alt="" src="" width="800" height="120"></header>
+				
+&nbsp;<div id="menu"> 
+  <ul id="menusor">
+     <li><a href="#">1</a>
+      <ul>
+	  <li><a href="#">1.1</a>
+        <ul>
+	      <li><a href="#">1.1.1</a></li>
+	      <li><a href="#">1.1.2</a></li>
+	      <li><a href="#">1.1.3</a></li>
+	    </ul>
+      </li>
+	  <li><a href="#">1.2</a>
+        <ul>
+	      <li><a href="#">1.2.1</a></li>
+	      <li><a href="#">1.2.2</a></li>
+	      <li><a href="#">1.2.3</a></li>
+	    </ul>
+      </li>
+	  <li><a href="#">1.3</a>
+	    <ul>
+	      <li><a href="#">1.3.1</a></li>
+	      <li><a href="#">1.3.2</a></li>
+	      <li><a href="#">1.3.3</a></li>
+	    </ul>
+	  </li>
+
+	  </ul>
+     </li>
+     <li><a href="#">2</a>
+       <ul>
+	  <li><a href="#">2.1</a>
+        <ul>
+	      <li><a href="#">2.1.1</a></li>
+	      <li><a href="#">2.1.2</a></li>
+	    </ul>
+      </li>
+	  <li><a href="#">2.2</a>
+        <ul>
+	      <li><a href="#">2.2.1</a></li>
+	      <li><a href="#">2.2.2</a></li>
+	    </ul>
+      </li>
+	  </ul>
+     <li><a href="#">3</a>
+       <ul>
+	  <li><a href="#">3.1</a>
+        <ul>
+	      <li><a href="#">3.1.1</a></li>
+	      <li><a href="#">3.1.2</a></li>
+	      <li><a href="#">3.1.3</a></li>
+	    </ul>
+      </li>
+	  <li><a href="#">3.2</a>
+        <ul>
+	      <li><a href="#">3.2.1</a></li>
+	      <li><a href="#">3.2.2</a></li>
+	      <li><a href="#">3.2.3</a></li>
+	      <li><a href="#">3.2.4</a></li>
+	    </ul>
+      </li>
+	  </ul>
+     <li><a href="#">4</a>
+       <ul>
+	  <li><a href="#">4.1</a>
+        <ul>
+	      <li><a href="#">4.1.1</a></li>
+	      <li><a href="#">4.1.2</a></li>
+	    </ul>
+      </li>
+	  <li><a href="#">4.2</a>
+        <ul>
+	      <li><a href="#">4.2.1</a></li>
+	      <li><a href="#">4.2.2</a></li>
+	    </ul>
+      </li>
+	  </ul>
+     <li><a href="#">Kapcsolatok</a></li>
+  </ul>
+</div>
+  <div id="tartalom">
+  <a class="szoveg"><h2>Kapcsolat</h2></a>
+  <p class="tkszt">Telefon:</p>
+  <p class="tkszt">Levelezési cím:</p>
+  <p>
+  <form>
+	<table border=0 align="center" width="500">
+		<tr>
+			<td align="right"> Címzett:</td>
+			<td><input type="text" value="email@uw.hu" name="recipient" size="40" /></td>
+		</tr>
+		<tr>
+			<td align="right" height="25"> Email címed:</td>
+			<td height="25"><p><input type="text" name="Email" size="40" /></p></td>
+		</tr>
+		<tr>
+			<td align="right" height="32">Tárgy:</td>
+			<td height="32"><p><input type="text" name="subject" size="40" /></p></td>
+		</tr>
+		<tr valign="top">
+			<td align="right">Üzenet:</td>
+			<td><textarea name="message" rows="10" cols="40" ></textarea>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="submit" value="Üzenet küldése" onClick="sendMail()" />&nbsp;&nbsp;&nbsp; <input type="reset" value="Törlés" /></p></td>
+		</tr>
+	</table>
+</form>
+
+<script language="Javascript"><!--
+function sendMail()
+{
+if (document.forms[0].recipient.value =="")
+	{
+	alert ("Nem lett kitöltve a címzett mező!") ;
+	return false ;
+	}
+if (document.forms[0].message.value == "")
+	{
+	alert ("Nem lett kitöltve az üzenet mező!") ;
+	return false ;
+	}
+if (document.forms[0].subject.value == "")
+	{
+	alert ("Nem lett kitöltve a tárgy mező!") ;
+	return false ;
+	}
+if (document.forms[0].Email.value == "")
+	{
+	alert ("Nem írtad be a mailcímed!") ;
+	return false ;
+	}
+	document.forms[0].action="mailto:" + document.forms[0].recipient.value + "?subject=" + document.forms[0].subject.value ;
+	return true ;
+}
+//-->
+</script>
+
+  </p>     
+  </div>
+     <div id="balmenu"> 
+       <div>
+       <br/>
+       <b>Menü</b><br/><br/>
+       </div>
+       <ul> 
+         <li><a href="#">B1</a></li>
+         <li><a href="#">B2</a></li>
+         <li><a href="#">B3</a></li>
+         <li><a href="#">B4</a></li>
+         <li><a href="#">B5</a></li>
+         <li><a href="#">B6</a></li>
+         <li><a href="#">B7</a></li>
+       </ul>
+     </div>
+ 
+ </div>
+</div>
+</body></html>
